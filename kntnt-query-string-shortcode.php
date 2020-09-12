@@ -7,7 +7,7 @@
  * Plugin Name:       Kntnt Query String Shortcode
  * Plugin URI:        https://www.kntnt.com/
  * GitHub Plugin URI: https://github.com/Kntnt/kntnt-query-string-shortcode
- * Description:       Provides the shortcode [get field="…" default="…"] that returns the value of the query string field with the name given by field="…"" or the value of default="…" if no such field is found.
+ * Description:       Provides the shortcode [get field="…" default="…"] that returns the value of the query string field with the name given by field="…" or the value of default="…" if no such field is found.
  * Version:           1.0.0
  * Author:            Thomas Barregren
  * Author URI:        https://www.kntnt.com/
