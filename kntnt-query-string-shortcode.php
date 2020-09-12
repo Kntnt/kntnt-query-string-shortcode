@@ -33,7 +33,7 @@ class Plugin {
   
   public function get_shortcode( $atts ) {
     $atts = $this->shortcode_atts( self::$defaults, $atts );
-    return isset( $_GET[$atts['field']] ) ? htmlspecialchars( $_GET[$atts['field']] ) : $defaults;
+    return isset( $_GET[$atts['field']] ) ? htmlspecialchars( $_GET[$atts['field']] ) : $atts['default'];
   }
   
   // A more forgiving version of WP's shortcode_atts().
