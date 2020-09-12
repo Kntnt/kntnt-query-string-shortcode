@@ -28,10 +28,10 @@ class Plugin {
   ];
       
   public function __construct() {
-    add_shortcode( 'menu', [ $this, 'menu_shortcode' ] );
+    add_shortcode( 'get', [ $this, 'get_shortcode' ] );
   }
   
-  public function menu_shortcode( $atts ) {
+  public function get_shortcode( $atts ) {
     $atts = $this->shortcode_atts( self::$defaults, $atts );
     return isset( $_GET[$atts['field']] ) ? htmlspecialchars( $_GET[$atts['field']] ) : $defaults;
   }
